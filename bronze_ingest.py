@@ -1,0 +1,15 @@
+# Databricks notebook source
+# 🔁 Lire les données du layer Bronze (fichier CSV)
+df_bronze = spark.read \
+    .option("header", True) \
+    .option("inferSchema", True) \
+    .csv("/mnt/bronzeclientwind/wind_power_production.csv")
+
+
+# COMMAND ----------
+
+
+###### load to silver and making trasnformation
+df_bronze.write \
+    .mode("overwrite") \
+    .parquet("/mnt/silverclientwind/wind_power_production_cleaned")
