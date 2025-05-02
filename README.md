@@ -1,2 +1,2 @@
 # etlwithdatabricks
-le fichier config est absent pour des raisons de sécurité 
+beaucoup de fichires non dispo pour des raisons de confidentialité et secu 
