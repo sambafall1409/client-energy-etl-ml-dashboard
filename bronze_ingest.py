@@ -4,7 +4,7 @@ df_bronze = spark.read \
     .option("header", True) \
     .option("inferSchema", True) \
     .csv("/mnt/bronzeclientwind/wind_power_production.csv")
-
+#cest modfiee cetta partie cets bohn 
 
 # COMMAND ----------
 
